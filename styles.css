@@ -4,27 +4,25 @@ body {
 }
 
 .name-container-title {
+    padding: 30px;
     height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blue;
+    background-color: #AFC8C4
 
 }
 
 .nav-container {
-    margin-top: 10px;
     height: 50px;
-    background-color: brown
+    background-color: #AFC8C4
 }
 .picture-container {
-    margin-top: 10px;
-    background-color: aquamarine
+    background-color: #AFC8C4
 }
 .content-container {
-    margin-top: 10px;
     height: 300px;
-    background-color: darkorange
+    background-color: #AFC8C4
 }
 .name-title {
     color: white;
