@@ -5,7 +5,11 @@ body {
 
 .name-container-title {
     height: 30px;
-    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+
 }
 
 .nav-container {
@@ -15,11 +19,17 @@ body {
 }
 .picture-container {
     margin-top: 10px;
-    height: 200px;
     background-color: aquamarine
 }
 .content-container {
     margin-top: 10px;
     height: 300px;
     background-color: darkorange
+}
+.name-title {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.title-picture{
+    width: 100%;
 }
