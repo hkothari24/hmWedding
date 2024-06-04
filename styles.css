@@ -1,6 +1,12 @@
 body {
     margin: 0;
     padding: 0;
+    --main-bg-color: #375A4F;
+    --border-hover-color: #ccc;
+    --border-solid-color: #ffffff;
+    --primary-text-color: #ffffff;
+    height: 1000vh;
+    width: 100vw;
 }
 
 .prata {
@@ -15,26 +21,46 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #9E91AC
-
+    background-color: var(--main-bg-color);
 }
 
 .nav-container {
-    height: 50px;
-    background-color: #9E91AC
+    height: 40px;
+    background-color: var(--main-bg-color);;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 0 0.2rem;
+    padding: 0.25rem 0.5rem; 
+    color: var(--primary-text-color);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    border-bottom: 2px solid var(--border-solid-color);
+}
+
+.nav-item-selected {
+    border-bottom: 2px solid var(--border-solid-color);
 }
 
 .picture-container {
-    background-color: #9E91AC
+    background-color: var(--main-bg-color);
 }
 
 .content-container {
     height: 300px;
-    background-color: #9E91AC
+    background-color: var(--main-bg-color);
 }
 
 .name-title {
-    color: white;
+    color: var(--primary-text-color);
     font-family: "Prata";
     font-size: medium;
 
