@@ -11,6 +11,12 @@ body {
     
 }
 
+.center-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .prata {
     font-family: "Prata", serif;
     font-weight: 400;
@@ -53,12 +59,20 @@ body {
 }
 
 .picture-container {
-    background-color: var(--main-bg-color);
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .content-container {
-    height: 300px;
     background-color: var(--main-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
 }
 
 .name-title {
@@ -68,5 +82,56 @@ body {
 }
 
 .title-picture{
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.line-container{
+    border-color: #AD947B;
+    width: 80%;
+}
+
+.itin-header{
+    color: var(--accent-color);
+}
+
+.itin-details{
+    color: #323131;
+    text-align: center;
+    font-size: large;
+}
+
+.itin-haldi{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+}
+
+.itin-haldi-himank{
+    color: var(--accent-color)
+}
+
+.itin-haldi-mekhla{
+    color: var(--accent-color);
+}
+
+.itin-haldi-divider {
+    margin: 0 2rem;
+    align-self: stretch;
+    width: 2px;
+    background-color: var(--accent-color);
+}
+
+.itin-haldi-columns{
+    display: flex;
+    align-self: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.map-container{
+    padding: 20px;
+    width: 100vw;
+    height: 70vh;
 }
