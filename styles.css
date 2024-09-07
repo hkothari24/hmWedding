@@ -6,7 +6,8 @@ body {
     --border-solid-color: #AD947B;
     --primary-text-color: #323131;
     --accent-color: #AD947B;
-    height: 1000vh;
+    --font-fam: "Prata", serif;
+    height: 100vh;
     width: 100vw;
     
 }
@@ -18,7 +19,7 @@ body {
 }
 
 .prata {
-    font-family: "Prata", serif;
+    font-family: var(--font-fam);
     font-weight: 400;
     font-style: normal;
 }  
@@ -48,6 +49,7 @@ body {
     color: var(--primary-text-color);
     cursor: pointer;
     text-decoration: none;
+    font-family: var(--font-fam);
 }
 
 .nav-item:hover {
@@ -68,6 +70,7 @@ body {
 
 .content-container {
     background-color: var(--main-bg-color);
+    padding-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,7 +99,7 @@ body {
 }
 
 .itin-details{
-    color: #323131;
+    color: var(--primary-text-color);
     text-align: center;
     font-size: large;
 }
@@ -134,4 +137,75 @@ body {
     padding: 20px;
     width: 100vw;
     height: 70vh;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--main-bg-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    font-size: 16px;
+    color: var(--accent-color);
+    margin-top: 10px;
+    margin-left: 20px;
+    font-family: var(--font-fam);
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 90%;
+    align-self: center;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid var(--border-solid-color);
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: var(--font-fam);
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 5px var(--accent-color);
+}
+
+.contact-form button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: var(--font-fam);
+    align-self: center;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #9e836d;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+h2, p {
+    text-align: center;
+    font-family: var(--font-fam);
+    color: var(--primary-text-color);
 }
