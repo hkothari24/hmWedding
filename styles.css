@@ -219,18 +219,18 @@ h2, p {
     margin: 0.5em 0;
 }
 
-a {
+.content-container a {
     color: var(--accent-color);
     text-decoration: underline;
 }
 
-a:hover {
+.content-container a:hover {
     color: var(--accent-color-hover);
     text-decoration: underline;
     font-weight: bold;
 }
 
-a:visited {
+.content-container a:visited {
     color: var(--accent-color);
     text-decoration: underline;
 }
