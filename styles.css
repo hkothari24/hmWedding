@@ -227,6 +227,7 @@ a {
 a:hover {
     color: var(--accent-color-hover);
     text-decoration: underline;
+    font-weight: bold;
 }
 
 a:visited {
