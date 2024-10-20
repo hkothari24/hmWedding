@@ -218,3 +218,18 @@ h2, p {
 .faq-list > li {
     margin: 0.5em 0;
 }
+
+a {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+a:hover {
+    color: var(--accent-color-hover);
+    text-decoration: underline;
+}
+
+a:visited {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
